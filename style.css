@@ -1,0 +1,245 @@
+:root {
+	--white: #ffff;
+	--dark-invisible: rgba(0, 0, 0, 0.36);
+	--light-blue: #f4f6f9;
+	--black: #000000;
+	--gradient-blue: linear-gradient(180deg, #4ba0d6 0%, #0263a0 100%);
+	--dark: #212121;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+}
+li {
+	list-style: none;
+}
+ul {
+	padding-left: 0 !important;
+}
+/***** hero *****/
+.hero {
+	background: url(./assets/images/Rectangle\ 2.png) no-repeat;
+	background-size: cover;
+	height: 13.3125rem;
+	display: flex;
+	width: 100%;
+	align-items: end;
+}
+.hero__caption {
+	text-align: center;
+	color: var(--white);
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	background: var(--dark-invisible);
+	padding: 20px 0;
+}
+@media (min-width: 768px) {
+	.hero {
+		height: 509px;
+		background-position: top;
+	}
+	.hero__caption {
+		font-size: 27px;
+		padding: 40px 0;
+	}
+}
+@media (min-width: 1280px) {
+	.hero {
+		height: 34.125rem;
+	}
+	.hero__caption {
+		font-size: 36px;
+	}
+}
+/***** End hero *****/
+/***** action *****/
+.action {
+	background: var(--light-blue);
+	padding: 1.9375rem 0;
+}
+.action__title {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	white-space: wrap;
+}
+.action__caption {
+	padding: 1.3125rem;
+	text-align: center;
+}
+.action__caption p {
+	font-weight: 500;
+	font-size: 0.875rem;
+}
+.action__register {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.action__register-img {
+	width: 12.4375rem;
+	padding: 30px 0 20px 0;
+}
+.btn-primary {
+	background: var(--gradient-blue);
+	border-radius: 5px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0.875rem 1.5625rem;
+}
+.btn-info {
+	color: var(--white);
+	background: #4ba0d6;
+	text-transform: capitalize;
+	border: none;
+}
+.btn-secondary {
+	color: var(--black);
+	background: #ced4da;
+	text-transform: capitalize;
+	border: none;
+}
+.action__register-note {
+	padding: 1.25rem 0 2.9375rem 0;
+	white-space: wrap;
+	font: 0.875rem;
+	font-weight: 600;
+	font-size: 14px;
+}
+.action__form {
+	padding: 20px 12px;
+}
+.action__form-tips {
+	margin: 15px;
+	border: 1px solid #ced4da;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.action__form-tips li {
+	padding-top: 15px;
+}
+.action__form-label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.action__form-input {
+	border: 1px solid #ced4da;
+	height: 35px;
+	width: 100%;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.action__register {
+	padding-top: 6.25rem;
+}
+@media (min-width: 768px) {
+	.action {
+		padding: 4.0625rem 0;
+	}
+	.action__register {
+		padding-top: 0;
+	}
+	.action__title {
+		white-space: nowrap;
+	}
+	.action__register-note {
+		white-space: nowrap;
+	}
+	.action__caption {
+		padding: 1.3125rem 0;
+	}
+}
+@media (min-width: 1280px) {
+	.action__register {
+		padding-top: 0;
+	}
+	.action .row {
+		align-items: baseline;
+		justify-content: space-between;
+	}
+	.action__caption {
+		text-align: left;
+	}
+	.action__title {
+		text-align: left;
+	}
+}
+/***** End action *****/
+/***** footer *****/
+footer {
+	padding: 35px 0;
+}
+.footer__title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 500;
+}
+.footer__socials {
+	display: flex;
+	justify-content: center;
+}
+.footer__socials li:not(:first-child) {
+	margin: 0 15px;
+}
+.footer__links {
+	flex-wrap: wrap;
+}
+.footer__links a {
+	text-decoration: none;
+	color: var(--white);
+}
+.footer__follow-links {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	border-bottom: 1px solid var(--white);
+	padding-bottom: 50px;
+}
+.footer__follow-links li {
+	margin: 0 5px;
+	padding: 5px;
+}
+.footer__connect {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-inline-start: none;
+}
+.footer__connect .footer__title {
+	text-align: left;
+}
+.footer__connect-links a {
+	font-size: 12px;
+	font-weight: 500;
+}
+.footer__connect-title {
+	font-weight: 700;
+}
+@media (min-width: 768px) {
+	.footer__follow-links {
+		border-bottom: none;
+	}
+	footer .row {
+		align-items: flex-end;
+	}
+	.footer__connect {
+		border-inline-start: 1px solid var(--white);
+	}
+}
+/***** End footer *****/
